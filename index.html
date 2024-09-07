@@ -530,9 +530,9 @@
                 </a>
               </li>
               <li class="footer-address__item">
-                <a href="tel:+380991111111" class="footer-address__link"
-                  >+38 099 111 11 11</a
-                >
+                <a href="tel:+380991111111" class="footer-address__link">
+                  +38 099 111 11 11
+                </a>
               </li>
             </ul>
           </address>
@@ -595,6 +595,44 @@
             </li>
           </ul>
         </div>
+
+        <div class="page-footer__form">
+          <b class="page-footer__text">Подпишитесь на рассылку</b>
+
+          <!-- Форма подписки -->
+          <form class="subscribe-form">
+            <div class="subscribe-form__field">
+              <input
+                type="email"
+                class="subscribe-form__input"
+                name="mail"
+                id="mail"
+                placeholder=" "
+                required
+              />
+              <label for="mail" class="subscribe-form__label">E-mail</label>
+            </div>
+
+            <!-- избавляемся от id -->
+            <!-- <label class="subscribe-form__field">
+              <input
+                type="email"
+                class="subscribe-form__input"
+                name="mail"
+                placeholder=" "
+                required
+              />
+              <span class="subscribe-form__label">E-mail</span>
+            </label> -->
+
+            <button type="submit" class="button button--with-icon">
+              Подписаться
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -612,6 +650,85 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <!-- Форма заявки -->
+        <form class="application-form">
+          <b class="application-form__text">
+            Оставьте свои данные, мы вам перезвоним
+          </b>
+
+          <div class="application-form__field">
+            <label for="name" class="application-form__label">Имя</label>
+            <div class="application-form__thumb">
+              <input
+                type="text"
+                class="application-form__input"
+                name="name"
+                id="name"
+              />
+              <svg class="application-form__icon">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="application-form__field">
+            <label for="tel" class="application-form__label">Телефон</label>
+            <div class="application-form__thumb">
+              <input
+                type="tel"
+                class="application-form__input"
+                name="tel"
+                id="tel"
+              />
+              <svg class="application-form__icon">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="application-form__field">
+            <label for="email" class="application-form__label">Почта</label>
+            <div class="application-form__thumb">
+              <input
+                type="email"
+                class="application-form__input"
+                name="email"
+                id="email"
+              />
+              <svg class="application-form__icon">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="application-form__field application-form__field--comment">
+            <label for="comment" class="application-form__label">
+              Комментарий
+            </label>
+            <textarea
+              class="application-form__comment"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input
+              class="checkbox__input visually-hidden"
+              type="checkbox"
+              name="policy"
+            />
+            <span class="checkbox__icon"></span>
+            <span class="checkbox__label">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="checkbox__label--accent">Условия договора</a>
+            </span>
+          </label>
+
+          <button type="submit" class="button">Отправить</button>
+        </form>
       </div>
     </div>
 
